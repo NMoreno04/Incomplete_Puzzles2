@@ -15,14 +15,17 @@ print("The Cell Sell")
 print("=============")
 
 // INPUT
-
+//Start from biginning
 // Get daytime minutes
 print("Number of daytime minutes?")
 let day = Int(readLine()!)!
-
 // Get evening minutes
 print("Number of evening minutes?")
 let evening = Int(readLine()!)!
+
+// Get weekend minutes
+print("Number of weekend minutes?")
+let weekend = Int(readLine()!)!
 
 // PROCESS
 
@@ -35,6 +38,10 @@ a += (day - 100) * 25
 // Add evening cost
 a += evening * 15
 
+
+// Add weekend cost
+a += weekend * 20
+
 // Calculate cost for plan B
 var b = 0
 
@@ -44,6 +51,8 @@ b += (day - 250) * 45
 // Add evening cost
 b += evening * 35
 
+// Add weekend cost
+b += evening * 25
 
 // OUTPUT
 print("Plan A costs \(a)")
