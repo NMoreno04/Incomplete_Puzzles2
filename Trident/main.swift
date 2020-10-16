@@ -44,4 +44,19 @@ for _ in 1...tineLength {
     print("")
 }
 
+// draw the part of the trident that connects the tines
+for _ in 1...3 + spacing * 2 {
+    
+    print("*", terminator: "")
+   
+}
+// Go to next line of output
+print("")
+
+//draw the handle
+//
+//1 + spacing
+//1...1 + spacing
+
+
 
